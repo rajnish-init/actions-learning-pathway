@@ -16,8 +16,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps: 
-    - name: Run ESLint
-      run: npm install --save-dev eslint
     - name: checkout repo
       uses: actions/checkout@v3
     - name: use node.js
