@@ -23,8 +23,6 @@ jobs:
       with:
          node-version: '18.x'        
     - run: npm install
-    - name: Install ESLint (if missing)
-      run: npm install --save-dev eslint eslint-config-next
     - run: npm test
   deploy:
     
@@ -65,4 +63,4 @@ jobs:
 
       - name: deploy
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v3
