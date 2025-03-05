@@ -23,4 +23,6 @@ jobs:
       with:
          node-version: '18.x'        
     - run: npm install
+    - name: Install ESLint (if missing)
+      run: npm install --save-dev eslint eslint-config-next
     - run: npm test
